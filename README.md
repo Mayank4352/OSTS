@@ -46,7 +46,7 @@ A modern, responsive website for OSTS, showcasing cutting-edge ultrasonic sensor
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/osts.git
+git clone https://github.com/Mayank4352/OSTS.git
 cd osts
 ```
 
