@@ -28,6 +28,17 @@ const ProductDetail = () => {
   const { productId } = useParams();
   const prefersReducedMotion = useReducedMotion();
 
+  const scrollToContact = () => {
+    navigate('/');
+    // Wait for navigation to complete, then scroll to contact
+    setTimeout(() => {
+      const element = document.getElementById('contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   const products: Record<string, ProductData> = {
     'ultrasonic-sensor': {
       id: 'ultrasonic-sensor',
@@ -259,7 +270,10 @@ const ProductDetail = () => {
                 {product.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-lg hover:shadow-xl transition-all duration-300 font-semibold">
+                <button 
+                  onClick={scrollToContact}
+                  className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-lg hover:shadow-xl transition-all duration-300 font-semibold"
+                >
                   Request Quote
                 </button>
                 <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 font-semibold">
@@ -408,12 +422,15 @@ const ProductDetail = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                onClick={() => navigate('/#contact')}
+                onClick={scrollToContact}
                 className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:shadow-xl transition-all duration-300 font-semibold"
               >
                 Contact Sales
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300 font-semibold">
+              <button 
+                onClick={scrollToContact}
+                className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300 font-semibold"
+              >
                 Technical Support
               </button>
             </div>
