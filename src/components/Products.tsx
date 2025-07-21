@@ -1,11 +1,14 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import { Radio, Wifi, Settings, BarChart3 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
   const prefersReducedMotion = useReducedMotion();
+  const navigate = useNavigate();
 
   const products = [
     {
+      id: 'ultrasonic-sensor',
       icon: Radio,
       title: "Ultrasonic Level Sensor",
       description: "High-precision ultrasonic sensors for accurate water level measurement with ±1mm accuracy.",
@@ -13,6 +16,7 @@ const Products = () => {
       image: "https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
+      id: 'iot-monitor',
       icon: Wifi,
       title: "IoT Water Level Monitor",
       description: "Smart monitoring system with wireless connectivity for remote water tank management.",
@@ -20,6 +24,7 @@ const Products = () => {
       image: "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
+      id: 'industrial-controller',
       icon: Settings,
       title: "Industrial Controller",
       description: "Robust control systems for industrial water management with automated pump control.",
@@ -27,6 +32,7 @@ const Products = () => {
       image: "https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
+      id: 'analytics-dashboard',
       icon: BarChart3,
       title: "Analytics Dashboard",
       description: "Comprehensive data analytics platform for water usage optimization and trend analysis.",
@@ -150,6 +156,7 @@ const Products = () => {
                     whileHover={{ scale: prefersReducedMotion ? 1 : 1.02 }}
                     whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
                     aria-label={`Learn more about ${product.title}`}
+                    onClick={() => navigate(`/product/${product.id}`)}
                   >
                     Learn More
                   </motion.button>

@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { CheckCircle, Clock, Shield, Smartphone, Wrench, TrendingUp } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Features = () => {
   const prefersReducedMotion = useReducedMotion();
+  const navigate = useNavigate();
 
   const features = [
     {
@@ -120,6 +122,7 @@ const Features = () => {
             className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:shadow-xl active:scale-95 transition-all duration-300 hover:bg-blue-50"
             whileHover={{ scale: prefersReducedMotion ? 1 : 1.05 }}
             whileTap={{ scale: prefersReducedMotion ? 1 : 0.95 }}
+            onClick={() => navigate('/#contact')}
           >
             Get Started Today
           </motion.button>
