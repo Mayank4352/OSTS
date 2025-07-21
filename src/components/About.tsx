@@ -115,7 +115,7 @@ const About = () => {
               water resources efficiently through innovative technology,
               real-time insights, and seamless integration. Our solutions are
               crafted to encourage smarter usage, reduce wastage, and simplify
-              maintenance—ensuring long-term sustainability and hassle-free
+              maintenance ensuring long-term sustainability and hassle-free
               performance.
             </motion.p>
 
