@@ -73,9 +73,8 @@ const About = () => {
               }}
               viewport={{ once: true }}
             >
-              
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
-                About{" "} OSTS
+                About OSTS
               </span>
             </motion.h2>
             <motion.p
@@ -132,7 +131,7 @@ const About = () => {
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
-                  className="text-center p-6 bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl"
+                  className="text-center p-4 bg-gradient-to-r from-blue-600/60 to-teal-600 rounded-lg"
                   variants={mobileStatsVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -141,7 +140,7 @@ const About = () => {
                   transition={{ duration: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
+                  <div className="text-3xl font-bold text-white bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
                     {stat.number}
                   </div>
                   <div className="text-sm text-gray-300 font-medium">
@@ -173,9 +172,7 @@ const About = () => {
                 alt="OSTS team"
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
-              <h3 className="text-xl font-bold text-white mb-4">
-                Our Mission
-              </h3>
+              <h3 className="text-xl font-bold text-white mb-4">Our Mission</h3>
               <p className="text-gray-300 leading-relaxed">
                 To revolutionize water management through innovative ultrasonic
                 sensor technology, providing accurate, reliable, and smart
@@ -195,7 +192,9 @@ const About = () => {
             transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
             viewport={{ once: true }}
           >
-            Our Core Values
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
+              Our Core Values
+            </span>
           </motion.h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => {
@@ -214,7 +213,7 @@ const About = () => {
                   whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
                 >
                   <motion.div
-                    className="bg-gradient-to-br from-gray-600 to-gray-700 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+                    className="bg-gradient-to-br from-gray-600 to-gray-700 text-xl font-bold text-white mb-3w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
                     whileHover={{
                       scale: prefersReducedMotion ? 1 : 1.1,
                       rotate: prefersReducedMotion ? 0 : 5,

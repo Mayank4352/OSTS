@@ -157,23 +157,23 @@ const Hero = () => {
               </div>
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <motion.div
-                  className="text-center p-4 bg-gray-700 rounded-lg"
+                  className="text-center p-4 bg-gradient-to-r from-blue-600/60 to-teal-600 rounded-lg"
                   whileHover={{ scale: prefersReducedMotion ? 1 : 1.05 }}
                   whileTap={{ scale: prefersReducedMotion ? 1 : 0.95 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="text-2xl font-bold text-blue-600">50+</div>
+                  <div className="text-2xl font-bold text-white">50+</div>
                   <div className="text-sm text-gray-300">
                     Projects Delivered
                   </div>
                 </motion.div>
                 <motion.div
-                  className="text-center p-4 bg-gray-700 rounded-lg"
+                  className="text-center p-4 bg-gradient-to-r from-blue-600/60 to-teal-600 rounded-lg"
                   whileHover={{ scale: prefersReducedMotion ? 1 : 1.05 }}
                   whileTap={{ scale: prefersReducedMotion ? 1 : 0.95 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="text-2xl font-bold text-teal-600">99.9%</div>
+                  <div className="text-2xl font-bold text-white">99.9%</div>
                   <div className="text-sm text-gray-300">Accuracy Rate</div>
                 </motion.div>
               </div>

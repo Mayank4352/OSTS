@@ -1,51 +1,55 @@
-import React, { useState } from 'react';
-import { motion, useReducedMotion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   const prefersReducedMotion = useReducedMotion();
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: ''
+    name: "",
+    email: "",
+    company: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We\'ll get back to you soon.');
-    setFormData({ name: '', email: '', company: '', message: '' });
+    console.log("Form submitted:", formData);
+    alert("Thank you for your message! We'll get back to you soon.");
+    setFormData({ name: "", email: "", company: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const mobileFormVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: prefersReducedMotion ? 0 : 30
+    hidden: {
+      opacity: 0,
+      y: prefersReducedMotion ? 0 : 30,
     },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { 
+      transition: {
         duration: prefersReducedMotion ? 0.1 : 0.5,
-        ease: "easeOut"
-      }
-    }
+      },
+    },
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-br from-gray-900 to-gray-800"
+    >
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,29 +57,34 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">Get In  Touch</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
+              Get In Touch
+            </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to implement smart water level monitoring? Contact us today for a custom solution tailored to your needs.
+            Ready to implement smart water level monitoring? Contact us today
+            for a custom solution tailored to your needs.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          <motion.div 
+          <motion.div
             className="lg:col-span-1 space-y-8"
             initial={{ opacity: 0, x: prefersReducedMotion ? 0 : -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
             viewport={{ once: true }}
           >
-            <motion.div 
+            <motion.div
               className="bg-gray-700 p-8 rounded-2xl shadow-lg"
               whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-              
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Contact Information
+              </h3>
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-gray-600 p-3 rounded-lg">
@@ -106,8 +115,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-white">Address</h4>
                     <p className="text-gray-300">
-                      Tech Hub, Innovation Center<br />
-                      Electronics City, Bangalore<br />
+                      Tech Hub, Innovation Center
+                      <br />
+                      Electronics City, Bangalore
+                      <br />
                       Karnataka, India - 560100
                     </p>
                   </div>
@@ -115,7 +126,7 @@ const Contact = () => {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="bg-gradient-to-r from-blue-600 to-teal-600 p-8 rounded-2xl text-white"
               whileHover={{ scale: prefersReducedMotion ? 1 : 1.02 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
@@ -123,7 +134,8 @@ const Contact = () => {
             >
               <h3 className="text-xl font-bold mb-4">Quick Response</h3>
               <p className="text-blue-100 mb-4">
-                Get a quote within 24 hours for your ultrasonic sensor requirements.
+                Get a quote within 24 hours for your ultrasonic sensor
+                requirements.
               </p>
               <div className="bg-white/20 p-4 rounded-lg">
                 <p className="text-sm font-semibold">Business Hours</p>
@@ -133,25 +145,27 @@ const Contact = () => {
             </motion.div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="lg:col-span-2"
             initial={{ opacity: 0, x: prefersReducedMotion ? 0 : 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ 
-              duration: prefersReducedMotion ? 0.1 : 0.8, 
-              delay: prefersReducedMotion ? 0 : 0.2 
+            transition={{
+              duration: prefersReducedMotion ? 0.1 : 0.8,
+              delay: prefersReducedMotion ? 0 : 0.2,
             }}
             viewport={{ once: true }}
           >
-            <motion.div 
+            <motion.div
               className="bg-gray-700 p-8 rounded-2xl shadow-lg"
               whileHover={{ y: prefersReducedMotion ? 0 : -2 }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
-              
-              <motion.form 
-                onSubmit={handleSubmit} 
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Send us a Message
+              </h3>
+
+              <motion.form
+                onSubmit={handleSubmit}
                 className="space-y-6"
                 variants={mobileFormVariants}
                 initial="hidden"
@@ -160,7 +174,10 @@ const Contact = () => {
               >
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
                       Full Name *
                     </label>
                     <input
@@ -175,7 +192,10 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
                       Email Address *
                     </label>
                     <input
@@ -192,7 +212,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="company"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Company Name
                   </label>
                   <input
@@ -207,7 +230,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Project Requirements *
                   </label>
                   <textarea
