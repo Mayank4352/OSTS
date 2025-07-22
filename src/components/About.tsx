@@ -53,6 +53,7 @@ const About = () => {
     },
   };
 
+  return (
     <section id="about" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -172,7 +173,6 @@ const About = () => {
                 alt="OSTS team"
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
               <h3 className="text-xl font-bold text-white mb-4">
                 Our Mission
               </h3>
@@ -224,7 +224,6 @@ const About = () => {
                   >
                     <IconComponent className="h-10 w-10 text-blue-600" />
                   </motion.div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">
                   <h4 className="text-xl font-bold text-white mb-3">
                     {value.title}
                   </h4>
