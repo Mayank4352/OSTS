@@ -19,7 +19,6 @@ const Footer = () => {
                 if (fallback) fallback.style.display = "inline";
               }}
             />
-              <span className="text-2xl font-bold">OSTS</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Leading provider of ultrasonic sensor-based water tank level detection systems. 
