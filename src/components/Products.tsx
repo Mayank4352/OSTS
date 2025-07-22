@@ -69,7 +69,7 @@ const Products = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-white mb-4">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">Products</span>
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">Our Products</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Cutting-edge ultrasonic sensor solutions designed for precise water level monitoring across various applications.
