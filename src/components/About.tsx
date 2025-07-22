@@ -73,9 +73,9 @@ const About = () => {
               }}
               viewport={{ once: true }}
             >
-              About{" "}
+              
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
-                OSTS
+                About{" "} OSTS
               </span>
             </motion.h2>
             <motion.p
