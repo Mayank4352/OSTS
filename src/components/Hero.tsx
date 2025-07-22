@@ -131,7 +131,7 @@ const Hero = () => {
             }}
           >
             <motion.div
-              className="relative z-10 bg-gray p-8 rounded-2xl shadow-2xl"
+              className="relative z-10 bg-gray-900 p-8 rounded-2xl shadow-2xl"
               whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               transition={{ duration: 0.2 }}
