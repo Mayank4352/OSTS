@@ -53,7 +53,6 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-          <h2 className="text-4xl font-bold text-white mb-4">
             Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">Touch</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
