@@ -141,10 +141,10 @@ const Hero = () => {
                   <img
                     src="https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt="Ultrasonic sensor technology"
-                    className="w-full h-full object-cover opacity-20"
+                    className="w-full h-full object-cover opacity-10"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-teal-600/80"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-teal-600/80 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/60 to-teal-600/60"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/60 to-teal-600/60 flex items-center justify-center">
                     <div className="text-center text-white">
                       <Activity className="h-16 w-16 mx-auto mb-4" />
                       <h3 className="text-xl font-bold">OSTS Technology</h3>
