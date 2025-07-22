@@ -68,7 +68,6 @@ const Products = () => {
           transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
           <h2 className="text-4xl font-bold text-white mb-4">
             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">Products</span>
           </h2>
@@ -137,7 +136,6 @@ const Products = () => {
                       }}
                     />
                   )}
-                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-3 rounded-full shadow-sm">
                   <div className="absolute top-4 left-4 bg-gray-800/95 backdrop-blur-sm p-3 rounded-full shadow-sm">
                     <IconComponent className="h-6 w-6 text-blue-600" />
                   </div>
