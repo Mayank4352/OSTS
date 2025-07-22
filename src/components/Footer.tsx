@@ -8,10 +8,17 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="bg-gradient-to-br from-blue-600 to-teal-600 p-2 rounded-lg">
-                <Activity className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold">OSTS</span>
+              <img
+              src="/osts-logo.png"
+              alt="OSTS - One Stop Tech Solutions"
+              className="h-10 w-auto object-contain max-w-[150px]"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = "none";
+                const fallback = target.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = "inline";
+              }}
+            />
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Leading provider of ultrasonic sensor-based water tank level detection systems. 
