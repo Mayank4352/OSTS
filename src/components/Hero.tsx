@@ -92,7 +92,7 @@ const Hero = () => {
                 className="text-center"
                 variants={mobileAnimationVariants}
               >
-                  <div className="bg-gray-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="bg-gray-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Waves className="h-8 w-8 text-blue-600" />
                 </div>
                 <h3 className="font-semibold text-white">Precision</h3>

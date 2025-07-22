@@ -288,7 +288,6 @@ const ProductDetail = () => {
               transition={{ duration: prefersReducedMotion ? 0.1 : 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-white p-8 rounded-2xl shadow-2xl">
               <div className="bg-gray-700 p-8 rounded-2xl shadow-2xl">
                 <img
                   src={product.image}
