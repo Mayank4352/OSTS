@@ -50,7 +50,7 @@ const Hero = () => {
               className="space-y-4"
               variants={mobileAnimationVariants}
             >
-              <h1 className="text-4xl md:text-6xl font-bold text-white-900 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                 Smart Water
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
                   {" "}
