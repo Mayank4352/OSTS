@@ -53,8 +53,7 @@ const About = () => {
     },
   };
 
-  return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -64,7 +63,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <motion.h2
-              className="text-4xl font-bold text-gray-900 mb-6"
+              className="text-4xl font-bold text-white mb-6"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -79,7 +78,7 @@ const About = () => {
               </span>
             </motion.h2>
             <motion.p
-              className="text-lg text-gray-600 mb-6 leading-relaxed"
+              className="text-lg text-gray-300 mb-6 leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -102,7 +101,7 @@ const About = () => {
             </motion.p>
 
             <motion.p
-              className="text-lg text-gray-600 mb-8 leading-relaxed"
+              className="text-lg text-gray-300 mb-8 leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -132,7 +131,7 @@ const About = () => {
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
-                  className="text-center p-6 bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl"
+                  className="text-center p-6 bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl"
                   variants={mobileStatsVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -144,7 +143,7 @@ const About = () => {
                   <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
                     {stat.number}
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">
+                  <div className="text-sm text-gray-300 font-medium">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -163,7 +162,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <motion.div
-              className="bg-white p-8 rounded-2xl shadow-2xl"
+              className="bg-gray-700 p-8 rounded-2xl shadow-2xl"
               whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               transition={{ duration: 0.3 }}
@@ -174,9 +173,10 @@ const About = () => {
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
               <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-xl font-bold text-white mb-4">
                 Our Mission
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 To revolutionize water management through innovative ultrasonic
                 sensor technology, providing accurate, reliable, and smart
                 solutions that contribute to efficient water usage and
@@ -189,7 +189,7 @@ const About = () => {
 
         <div className="mt-20">
           <motion.h3
-            className="text-3xl font-bold text-center text-gray-900 mb-12"
+            className="text-3xl font-bold text-center text-white mb-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
@@ -214,7 +214,7 @@ const About = () => {
                   whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
                 >
                   <motion.div
-                    className="bg-gradient-to-br from-blue-100 to-teal-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+                    className="bg-gradient-to-br from-gray-600 to-gray-700 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
                     whileHover={{
                       scale: prefersReducedMotion ? 1 : 1.1,
                       rotate: prefersReducedMotion ? 0 : 5,
@@ -225,9 +225,10 @@ const About = () => {
                     <IconComponent className="h-10 w-10 text-blue-600" />
                   </motion.div>
                   <h4 className="text-xl font-bold text-gray-900 mb-3">
+                  <h4 className="text-xl font-bold text-white mb-3">
                     {value.title}
                   </h4>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-300 leading-relaxed">
                     {value.description}
                   </p>
                 </motion.div>

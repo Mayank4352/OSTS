@@ -43,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -53,9 +53,10 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4">
             Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">Touch</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to implement smart water level monitoring? Contact us today for a custom solution tailored to your needs.
           </p>
         </motion.div>
@@ -69,43 +70,43 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <motion.div 
-              className="bg-white p-8 rounded-2xl shadow-lg"
+              className="bg-gray-700 p-8 rounded-2xl shadow-lg"
               whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
+                  <div className="bg-gray-600 p-3 rounded-lg">
                     <Phone className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+91 9876543210</p>
-                    <p className="text-gray-600">+91 8765432109</p>
+                    <h4 className="font-semibold text-white">Phone</h4>
+                    <p className="text-gray-300">+91 9876543210</p>
+                    <p className="text-gray-300">+91 8765432109</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-teal-100 p-3 rounded-lg">
+                  <div className="bg-gray-600 p-3 rounded-lg">
                     <Mail className="h-6 w-6 text-teal-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">info@osts.tech</p>
-                    <p className="text-gray-600">support@osts.tech</p>
+                    <h4 className="font-semibold text-white">Email</h4>
+                    <p className="text-gray-300">info@osts.tech</p>
+                    <p className="text-gray-300">support@osts.tech</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-100 p-3 rounded-lg">
+                  <div className="bg-gray-600 p-3 rounded-lg">
                     <MapPin className="h-6 w-6 text-green-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Address</h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold text-white">Address</h4>
+                    <p className="text-gray-300">
                       Tech Hub, Innovation Center<br />
                       Electronics City, Bangalore<br />
                       Karnataka, India - 560100
@@ -144,11 +145,11 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <motion.div 
-              className="bg-white p-8 rounded-2xl shadow-lg"
+              className="bg-gray-700 p-8 rounded-2xl shadow-lg"
               whileHover={{ y: prefersReducedMotion ? 0 : -2 }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
               
               <motion.form 
                 onSubmit={handleSubmit} 
@@ -160,7 +161,7 @@ const Contact = () => {
               >
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                       Full Name *
                     </label>
                     <input
@@ -170,12 +171,12 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99]"
+                      className="w-full px-4 py-3 border border-gray-500 bg-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99] placeholder-gray-400"
                       placeholder="Enter your full name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                       Email Address *
                     </label>
                     <input
@@ -185,14 +186,14 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99]"
+                      className="w-full px-4 py-3 border border-gray-500 bg-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99] placeholder-gray-400"
                       placeholder="Enter your email"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
                     Company Name
                   </label>
                   <input
@@ -201,13 +202,13 @@ const Contact = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99]"
+                    className="w-full px-4 py-3 border border-gray-500 bg-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99] placeholder-gray-400"
                     placeholder="Enter your company name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                     Project Requirements *
                   </label>
                   <textarea
@@ -217,7 +218,7 @@ const Contact = () => {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99]"
+                    className="w-full px-4 py-3 border border-gray-500 bg-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99] placeholder-gray-400"
                     placeholder="Describe your water level monitoring requirements..."
                   ></textarea>
                 </div>

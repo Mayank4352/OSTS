@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-lg" : "bg-gray/90 backdrop-blur-md"
+        isScrolled ? "bg-gray-800 shadow-lg" : "bg-gray-900/90 backdrop-blur-md"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -60,25 +60,26 @@ const Header = () => {
               }}
             />
             <span className="text-xl font-bold text-gray-900 hidden">OSTS</span>
+            <span className="text-xl font-bold text-white hidden">OSTS</span>
           </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-gray-300 hover:text-blue-400 transition-colors font-medium"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("products")}
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-gray-300 hover:text-blue-400 transition-colors font-medium"
             >
               Products
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-gray-300 hover:text-blue-400 transition-colors font-medium"
             >
               About
             </button>
@@ -93,7 +94,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-gray-700 hover:text-blue-600 transition-colors"
+            className="md:hidden text-gray-300 hover:text-blue-400 transition-colors"
           >
             {isMobileMenuOpen ? (
               <X className="h-6 w-6" />
@@ -105,23 +106,23 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t bg-white">
+          <div className="md:hidden border-t bg-gray-800 border-gray-700">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button
                 onClick={() => scrollToSection("home")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-blue-400 transition-colors font-medium"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("products")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-blue-400 transition-colors font-medium"
               >
                 Products
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-blue-400 transition-colors font-medium"
               >
                 About
               </button>
