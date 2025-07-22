@@ -89,7 +89,7 @@ const Features = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+    <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -98,13 +98,13 @@ const Features = () => {
           transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4">
             Why Choose{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
               OSTS
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Our ultrasonic sensor technology delivers unmatched performance,
             reliability, and innovation for water level monitoring solutions.
           </p>
@@ -116,7 +116,7 @@ const Features = () => {
             return (
               <motion.div
                 key={index}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl active:shadow-lg transition-all duration-300 group"
+                className="bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-xl active:shadow-lg transition-all duration-300 group"
                 variants={mobileFeatureVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -129,16 +129,16 @@ const Features = () => {
                 whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               >
                 <motion.div
-                  className="bg-gradient-to-br from-blue-100 to-teal-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+                  className="bg-gradient-to-br from-gray-600 to-gray-800 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
                   whileHover={{ rotate: prefersReducedMotion ? 0 : 5 }}
                   transition={{ duration: 0.2 }}
                 >
                   <IconComponent className="h-8 w-8 text-blue-600" />
                 </motion.div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-white mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
