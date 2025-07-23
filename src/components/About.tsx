@@ -175,7 +175,7 @@ const About = () => {
                 alt="OSTS team"
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
-              <h3 className="text-xl font-bold text-white mb-4">
+              <h3 className="text-xl font-bold text-black mb-4">
                 Our Mission
               </h3>
               <p className="text-gray-700 leading-relaxed">
