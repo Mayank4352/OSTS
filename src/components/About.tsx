@@ -54,7 +54,11 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20" style={{ backgroundColor: '#c5d2dd' }}>
+    <section
+      id="about"
+      className="py-20"
+      style={{ backgroundColor: "#c5d2dd" }}
+    >
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -132,7 +136,10 @@ const About = () => {
                 <motion.div
                   key={index}
                   className="text-center p-6 rounded-xl"
-                  style={{ background: 'linear-gradient(to bottom right, #cbcfd4, #c5d2dd)' }}
+                  style={{
+                    background:
+                      "linear-gradient(to bottom right, #cbcfd4, #c5d2dd)",
+                  }}
                   variants={mobileStatsVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -141,7 +148,7 @@ const About = () => {
                   transition={{ duration: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <div className="text-3xl font-bold text-white bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
+                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
                     {stat.number}
                   </div>
                   <div className="text-sm text-gray-700 font-medium">
@@ -164,7 +171,7 @@ const About = () => {
           >
             <motion.div
               className="p-8 rounded-2xl shadow-2xl"
-              style={{ backgroundColor: '#cbcfd4' }}
+              style={{ backgroundColor: "#cbcfd4" }}
               whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               transition={{ duration: 0.3 }}
@@ -174,9 +181,7 @@ const About = () => {
                 alt="OSTS team"
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
-              <h3 className="text-xl font-bold text-black mb-4">
-                Our Mission
-              </h3>
+              <h3 className="text-xl font-bold text-black mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
                 To revolutionize water management through innovative ultrasonic
                 sensor technology, providing accurate, reliable, and smart
@@ -184,7 +189,13 @@ const About = () => {
                 sustainable resource management.
               </p>
             </motion.div>
-            <div className="absolute -z-10 -top-4 -right-4 w-full h-full rounded-2xl opacity-30" style={{ background: 'linear-gradient(to bottom right, #c5d2dd, #cbcfd4)' }}></div>
+            <div
+              className="absolute -z-10 -top-4 -right-4 w-full h-full rounded-2xl opacity-30"
+              style={{
+                background:
+                  "linear-gradient(to bottom right, #c5d2dd, #cbcfd4)",
+              }}
+            ></div>
           </motion.div>
         </div>
 
@@ -218,7 +229,10 @@ const About = () => {
                 >
                   <motion.div
                     className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
-                    style={{ background: 'linear-gradient(to bottom right, #cbcfd4, #c5d2dd)' }}
+                    style={{
+                      background:
+                        "linear-gradient(to bottom right, #cbcfd4, #c5d2dd)",
+                    }}
                     whileHover={{
                       scale: prefersReducedMotion ? 1 : 1.1,
                       rotate: prefersReducedMotion ? 0 : 5,
