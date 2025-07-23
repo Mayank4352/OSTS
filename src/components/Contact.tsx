@@ -99,8 +99,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Phone</h4>
-                    <p className="text-gray-700">+91 9876543210</p>
-                    <p className="text-gray-700">+91 8765432109</p>
+                    <p className="text-gray-700">+91 8583808823</p>
+                    <p className="text-gray-700">+91 6289326433</p>
+                    <p className="text-gray-700">+91 70035 46675</p>
                   </div>
                 </div>
 
@@ -113,8 +114,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Email</h4>
-                    <p className="text-gray-700">info@osts.tech</p>
-                    <p className="text-gray-700">support@osts.tech</p>
+                    <p className="text-gray-700">
+                      onestoptechsolutions2023@gmail.com{" "}
+                    </p>
                   </div>
                 </div>
 
@@ -128,11 +130,11 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-gray-800">Address</h4>
                     <p className="text-gray-700">
-                      Tech Hub, Innovation Center
+                      268/73 New Narkelbagan
                       <br />
-                      Electronics City, Bangalore
+                      Chinsurah, Hooghly
                       <br />
-                      Karnataka, India - 560100
+                      West Bengal, India - 712103
                     </p>
                   </div>
                 </div>
