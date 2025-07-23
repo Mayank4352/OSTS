@@ -70,7 +70,7 @@ const Contact = () => {
           >
             <motion.div 
               className="p-8 rounded-2xl shadow-lg"
-              style={{ backgroundColor: '#c5d2dd' }}
+              style={{ backgroundColor: '#d3d3d3' }}
               whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               transition={{ duration: 0.3 }}
