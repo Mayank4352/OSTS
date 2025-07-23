@@ -146,7 +146,7 @@ const Contact = () => {
           >
             <motion.div 
               className="p-8 rounded-2xl shadow-lg"
-              style={{ backgroundColor: '#d3d3d3' }}
+              style={{ backgroundColor: '#c5d2dd' }}
               whileHover={{ y: prefersReducedMotion ? 0 : -2 }}
               transition={{ duration: 0.3 }}
             >
@@ -162,7 +162,7 @@ const Contact = () => {
               >
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
                       Full Name *
                     </label>
                     <input
