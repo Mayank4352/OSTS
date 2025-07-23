@@ -59,7 +59,7 @@ const Products = () => {
   };
 
   return (
-    <section id="products" className="py-20 bg-gray-800">
+    <section id="products" className="py-20" style={{ backgroundColor: '#c5d2dd' }}>
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -68,10 +68,10 @@ const Products = () => {
           transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">Our Products</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Cutting-edge ultrasonic sensor solutions designed for precise water level monitoring across various applications.
           </p>
         </motion.div>
@@ -82,7 +82,8 @@ const Products = () => {
             return (
               <motion.div 
                 key={index} 
-                className="group bg-gray-700 rounded-2xl shadow-lg hover:shadow-2xl active:shadow-lg transition-all duration-300 overflow-hidden border border-gray-600 min-h-[520px] flex flex-col w-full"
+                className="group rounded-2xl shadow-lg hover:shadow-2xl active:shadow-lg transition-all duration-300 overflow-hidden border min-h-[520px] flex flex-col w-full"
+                style={{ backgroundColor: '#cbcfd4', borderColor: '#c5d2dd' }}
                 variants={mobileCardVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -94,7 +95,7 @@ const Products = () => {
                 whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
                 whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               >
-                <div className="relative overflow-hidden bg-gradient-to-br from-gray-600 to-gray-700">
+                <div className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #c5d2dd, #cbcfd4)' }}>
                   {product.title === "Analytics Dashboard" ? (
                     // Custom dashboard visualization for Analytics Dashboard
                     <div className="w-full h-48 bg-gradient-to-br from-blue-600 via-blue-500 to-teal-500 relative overflow-hidden group-hover:scale-105 transition-transform duration-300">
@@ -136,16 +137,16 @@ const Products = () => {
                       }}
                     />
                   )}
-                  <div className="absolute top-4 left-4 bg-gray-800/95 backdrop-blur-sm p-3 rounded-full shadow-sm">
+                  <div className="absolute top-4 left-4 backdrop-blur-sm p-3 rounded-full shadow-sm" style={{ backgroundColor: 'rgba(203, 207, 212, 0.95)' }}>
                     <IconComponent className="h-6 w-6 text-blue-600" />
                   </div>
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-xl font-bold text-white mb-3">{product.title}</h3>
-                  <p className="text-gray-300 mb-4 leading-relaxed text-sm">{product.description}</p>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">{product.title}</h3>
+                  <p className="text-gray-700 mb-4 leading-relaxed text-sm">{product.description}</p>
                   <ul className="space-y-2 mb-6 flex-1">
                     {product.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-gray-300">
+                      <li key={idx} className="flex items-start text-sm text-gray-700">
                         <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-teal-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
                         <span className="leading-relaxed">{feature}</span>
                       </li>
