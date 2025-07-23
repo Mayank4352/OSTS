@@ -54,7 +54,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-gray-800">
+    <section id="about" className="py-20" style={{ backgroundColor: '#c5d2dd' }}>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -64,7 +64,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <motion.h2
-              className="text-4xl font-bold text-white mb-6"
+              className="text-4xl font-bold text-gray-800 mb-6"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -78,7 +78,7 @@ const About = () => {
               </span>
             </motion.h2>
             <motion.p
-              className="text-lg text-gray-300 mb-6 leading-relaxed"
+              className="text-lg text-gray-700 mb-6 leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -101,7 +101,7 @@ const About = () => {
             </motion.p>
 
             <motion.p
-              className="text-lg text-gray-300 mb-8 leading-relaxed"
+              className="text-lg text-gray-700 mb-8 leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -131,7 +131,8 @@ const About = () => {
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
-                  className="text-center p-4 bg-gradient-to-r from-blue-600/60 to-teal-600 rounded-lg"
+                  className="text-center p-6 rounded-xl"
+                  style={{ background: 'linear-gradient(to bottom right, #cbcfd4, #c5d2dd)' }}
                   variants={mobileStatsVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -143,7 +144,7 @@ const About = () => {
                   <div className="text-3xl font-bold text-white bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
                     {stat.number}
                   </div>
-                  <div className="text-sm text-gray-300 font-medium">
+                  <div className="text-sm text-gray-700 font-medium">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -162,7 +163,8 @@ const About = () => {
             viewport={{ once: true }}
           >
             <motion.div
-              className="bg-gray-700 p-8 rounded-2xl shadow-2xl"
+              className="p-8 rounded-2xl shadow-2xl"
+              style={{ backgroundColor: '#cbcfd4' }}
               whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               transition={{ duration: 0.3 }}
@@ -172,21 +174,23 @@ const About = () => {
                 alt="OSTS team"
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
-              <h3 className="text-xl font-bold text-white mb-4">Our Mission</h3>
-              <p className="text-gray-300 leading-relaxed">
+              <h3 className="text-xl font-bold text-black mb-4">
+                Our Mission
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
                 To revolutionize water management through innovative ultrasonic
                 sensor technology, providing accurate, reliable, and smart
                 solutions that contribute to efficient water usage and
                 sustainable resource management.
               </p>
             </motion.div>
-            <div className="absolute -z-10 -top-4 -right-4 w-full h-full bg-gradient-to-br from-blue-200 to-teal-200 rounded-2xl opacity-30"></div>
+            <div className="absolute -z-10 -top-4 -right-4 w-full h-full rounded-2xl opacity-30" style={{ background: 'linear-gradient(to bottom right, #c5d2dd, #cbcfd4)' }}></div>
           </motion.div>
         </div>
 
         <div className="mt-20">
           <motion.h3
-            className="text-3xl font-bold text-center text-white mb-12"
+            className="text-3xl font-bold text-center text-gray-800 mb-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
@@ -213,7 +217,8 @@ const About = () => {
                   whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
                 >
                   <motion.div
-                    className="bg-gradient-to-br from-gray-600 to-gray-700 text-xl font-bold text-white mb-3w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+                    className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+                    style={{ background: 'linear-gradient(to bottom right, #cbcfd4, #c5d2dd)' }}
                     whileHover={{
                       scale: prefersReducedMotion ? 1 : 1.1,
                       rotate: prefersReducedMotion ? 0 : 5,
@@ -223,10 +228,10 @@ const About = () => {
                   >
                     <IconComponent className="h-10 w-10 text-blue-600" />
                   </motion.div>
-                  <h4 className="text-xl font-bold text-white mb-3">
+                  <h4 className="text-xl font-bold text-gray-800 mb-3">
                     {value.title}
                   </h4>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed">
                     {value.description}
                   </p>
                 </motion.div>

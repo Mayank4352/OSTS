@@ -231,7 +231,7 @@ const ProductDetail = () => {
   const IconComponent = product.icon;
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen" style={{ backgroundColor: '#cbcfd4' }}>
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-4">
         <div className="container mx-auto px-4">
@@ -246,7 +246,7 @@ const ProductDetail = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-800 to-gray-900">
+      <section className="py-20" style={{ background: 'linear-gradient(to bottom right, #c5d2dd, #cbcfd4)' }}>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -255,18 +255,18 @@ const ProductDetail = () => {
               transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="bg-gray-700 p-3 rounded-lg">
+                <div className="p-3 rounded-lg" style={{ backgroundColor: '#cbcfd4' }}>
                   <IconComponent className="h-8 w-8 text-blue-600" />
                 </div>
                 <span className="text-blue-600 font-semibold">OSTS Product</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                 {product.title}
               </h1>
               <p className="text-xl text-blue-600 font-semibold mb-4">
                 {product.subtitle}
               </p>
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 {product.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -276,7 +276,7 @@ const ProductDetail = () => {
                 >
                   Request Quote
                 </button>
-                <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 font-semibold">
+                <button className="border-2 border-gray-700 text-gray-700 px-8 py-4 rounded-lg hover:bg-gray-700 hover:text-white transition-all duration-300 font-semibold">
                   Download Datasheet
                 </button>
               </div>
@@ -288,7 +288,7 @@ const ProductDetail = () => {
               transition={{ duration: prefersReducedMotion ? 0.1 : 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-gray-700 p-8 rounded-2xl shadow-2xl">
+              <div className="p-8 rounded-2xl shadow-2xl" style={{ backgroundColor: '#c5d2dd' }}>
                 <img
                   src={product.image}
                   alt={product.title}
@@ -298,7 +298,7 @@ const ProductDetail = () => {
                   <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600 mb-2">
                     {product.price}
                   </div>
-                  <p className="text-gray-300">Contact us for custom pricing</p>
+                  <p className="text-gray-700">Contact us for custom pricing</p>
                 </div>
               </div>
             </motion.div>
@@ -307,7 +307,7 @@ const ProductDetail = () => {
       </section>
 
       {/* Product Details */}
-      <section className="py-20 bg-gray-800">
+      <section className="py-20" style={{ backgroundColor: '#c5d2dd' }}>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Features */}
@@ -317,12 +317,12 @@ const ProductDetail = () => {
               transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-2xl font-bold text-white mb-6">Key Features</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">Key Features</h2>
               <ul className="space-y-4">
                 {product.features.map((feature, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <Check className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
-                    <span className="text-gray-300">{feature}</span>
+                    <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -335,13 +335,13 @@ const ProductDetail = () => {
               transition={{ duration: prefersReducedMotion ? 0.1 : 0.8, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-2xl font-bold text-white mb-6">Specifications</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">Specifications</h2>
               <div className="space-y-4">
                 {product.specifications.map((spec, index) => (
-                  <div key={index} className="border-b border-gray-600 pb-2">
+                  <div key={index} className="border-b pb-2" style={{ borderColor: '#cbcfd4' }}>
                     <div className="flex justify-between">
-                      <span className="text-gray-400">{spec.label}</span>
-                      <span className="font-semibold text-white">{spec.value}</span>
+                      <span className="text-gray-600">{spec.label}</span>
+                      <span className="font-semibold text-gray-800">{spec.value}</span>
                     </div>
                   </div>
                 ))}
@@ -355,12 +355,12 @@ const ProductDetail = () => {
               transition={{ duration: prefersReducedMotion ? 0.1 : 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-2xl font-bold text-white mb-6">Benefits</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">Benefits</h2>
               <ul className="space-y-4">
                 {product.benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-teal-600 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-gray-300">{benefit}</span>
+                    <span className="text-gray-700">{benefit}</span>
                   </li>
                 ))}
               </ul>
@@ -370,7 +370,7 @@ const ProductDetail = () => {
       </section>
 
       {/* Applications */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20" style={{ backgroundColor: '#cbcfd4' }}>
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -379,8 +379,8 @@ const ProductDetail = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-white mb-4">Applications</h2>
-            <p className="text-xl text-gray-300">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Applications</h2>
+            <p className="text-xl text-gray-700">
               Ideal for various industries and use cases
             </p>
           </motion.div>
@@ -393,12 +393,13 @@ const ProductDetail = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: prefersReducedMotion ? 0.1 : 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                style={{ backgroundColor: '#c5d2dd' }}
               >
-                <div className="bg-gradient-to-br from-gray-600 to-gray-800 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ background: 'linear-gradient(to bottom right, #cbcfd4, #c5d2dd)' }}>
                   <IconComponent className="h-6 w-6 text-blue-600" />
                 </div>
-                <h3 className="font-semibold text-white mb-2">{application}</h3>
+                <h3 className="font-semibold text-gray-800 mb-2">{application}</h3>
               </motion.div>
             ))}
           </div>

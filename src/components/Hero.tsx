@@ -36,7 +36,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-16 min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+      className="pt-16 min-h-screen"
+      style={{ 
+        background: `linear-gradient(to bottom right, #cbcfd4, #c5d2dd, #cbcfd4)` 
+      }}
     >
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -50,14 +53,16 @@ const Hero = () => {
               className="space-y-4"
               variants={mobileAnimationVariants}
             >
-              <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
-                Smart Water
+              <h1 className="text-4xl md:text-6xl font-bold bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
+                  Smart Water
+                </span>
+                <span className="text-gray-800">
                   {" "}
                   Level Detection
                 </span>
               </h1>
-              <p className="text-xl text-gray-300 leading-relaxed">
+              <p className="text-xl text-gray-700 leading-relaxed">
                 Advanced ultrasonic sensor technology for precise water tank
                 monitoring. Real-time level detection with unmatched accuracy
                 and reliability.
@@ -77,7 +82,7 @@ const Hero = () => {
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full hover:bg-blue-600 hover:text-white active:scale-95 transition-all duration-300 font-semibold"
+                className="border-2 border-gray-700 text-gray-700 px-8 py-4 rounded-full hover:bg-gray-700 hover:text-white active:scale-95 transition-all duration-300 font-semibold"
               >
                 Get Quote
               </button>
@@ -91,31 +96,31 @@ const Hero = () => {
                 className="text-center"
                 variants={mobileAnimationVariants}
               >
-                <div className="bg-gray-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3" style={{ backgroundColor: '#c5d2dd' }}>
                   <Waves className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="font-semibold text-white">Precision</h3>
-                <p className="text-sm text-gray-400">±1mm accuracy</p>
+                <h3 className="font-semibold text-gray-800">Precision</h3>
+                <p className="text-sm text-gray-600">±1mm accuracy</p>
               </motion.div>
               <motion.div
                 className="text-center"
                 variants={mobileAnimationVariants}
               >
-                <div className="bg-gray-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3" style={{ backgroundColor: '#c5d2dd' }}>
                   <Zap className="h-8 w-8 text-teal-600" />
                 </div>
-                <h3 className="font-semibold text-white">Real-time</h3>
-                <p className="text-sm text-gray-400">Instant monitoring</p>
+                <h3 className="font-semibold text-gray-800">Real-time</h3>
+                <p className="text-sm text-gray-600">Instant monitoring</p>
               </motion.div>
               <motion.div
                 className="text-center"
                 variants={mobileAnimationVariants}
               >
-                <div className="bg-gray-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3" style={{ backgroundColor: '#c5d2dd' }}>
                   <Shield className="h-8 w-8 text-green-600" />
                 </div>
-                <h3 className="font-semibold text-white">Reliable</h3>
-                <p className="text-sm text-gray-400">Industrial grade</p>
+                <h3 className="font-semibold text-gray-800">Reliable</h3>
+                <p className="text-sm text-gray-600">Industrial grade</p>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -131,7 +136,8 @@ const Hero = () => {
             }}
           >
             <motion.div
-              className="relative z-10 bg-gray-700/60 p-8 rounded-2xl shadow-2xl"
+              className="relative z-10 p-8 rounded-2xl shadow-2xl"
+              style={{ backgroundColor: 'rgba(197, 210, 221, 0.6)' }}
               whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               transition={{ duration: 0.2 }}
@@ -157,24 +163,26 @@ const Hero = () => {
               </div>
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <motion.div
-                  className="text-center p-4 bg-gradient-to-r from-blue-600/60 to-teal-600 rounded-lg"
+                  className="text-center p-4 rounded-lg"
+                  style={{ backgroundColor: '#c5cfda ' }}
                   whileHover={{ scale: prefersReducedMotion ? 1 : 1.05 }}
                   whileTap={{ scale: prefersReducedMotion ? 1 : 0.95 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="text-2xl font-bold text-white">50+</div>
-                  <div className="text-sm text-gray-300">
-                    Projects Delivered
+                  <div className="text-2xl font-bold text-blue-600">50+</div>
+                  <div className="text-sm text-gray-700">
+                    Products Delivered
                   </div>
                 </motion.div>
                 <motion.div
-                  className="text-center p-4 bg-gradient-to-r from-blue-600/60 to-teal-600 rounded-lg"
+                  className="text-center p-4 rounded-lg"
+                  style={{ backgroundColor: '#c5d2dd' }}
                   whileHover={{ scale: prefersReducedMotion ? 1 : 1.05 }}
                   whileTap={{ scale: prefersReducedMotion ? 1 : 0.95 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="text-2xl font-bold text-white">99.9%</div>
-                  <div className="text-sm text-gray-300">Accuracy Rate</div>
+                  <div className="text-2xl font-bold text-teal-600">99.9%</div>
+                  <div className="text-sm text-gray-700">Accuracy Rate</div>
                 </motion.div>
               </div>
             </motion.div>
