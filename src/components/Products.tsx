@@ -19,7 +19,7 @@ const Products = () => {
         "4-20mA output",
         "Temperature compensation",
       ],
-      image: "public/sensor.jpg",
+      image: "/sensor.jpg",
     },
     {
       id: "iot-monitor",
@@ -33,7 +33,7 @@ const Products = () => {
         "Real-time alerts",
         "Cloud data storage",
       ],
-      image: "public/iot-monitor.jpg",
+      image: "/iot-monitor.jpg",
     },
     {
       id: "industrial-controller",
@@ -47,7 +47,7 @@ const Products = () => {
         "Modbus communication",
         "HMI interface",
       ],
-      image: "public/industrial-controller.jpg",
+      image: "/industrial-controller.jpg",
     },
     {
       id: "analytics-dashboard",
@@ -61,7 +61,7 @@ const Products = () => {
         "Custom reports",
         "Energy optimization",
       ],
-      image: "public/analytics.jpg",
+      image: "/analytics.jpg",
     },
   ];
 
