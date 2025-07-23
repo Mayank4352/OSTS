@@ -54,7 +54,9 @@ const Hero = () => {
               variants={mobileAnimationVariants}
             >
               <h1 className="text-4xl md:text-6xl font-bold bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
-                Smart Water
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
+                  Smart Water
+                </span>
                 <span className="text-gray-800">
                   {" "}
                   Level Detection
