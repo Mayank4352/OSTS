@@ -174,7 +174,7 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99]"
                       style={{ 
-                        borderColor: '#cbcfd4', 
+                        borderColor: '#d3d3d3', 
                         backgroundColor: '#d3d3d3', 
                         color: '#374151' 
                       }}
@@ -194,8 +194,8 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 active:scale-[0.99]"
                       style={{ 
-                        borderColor: '#cbcfd4', 
-                        backgroundColor: '#cbcfd4', 
+                        borderColor: '#d3d3d3', 
+                        backgroundColor: '#d3d3d3', 
                         color: '#374151' 
                       }}
                       placeholder="Enter your email"
