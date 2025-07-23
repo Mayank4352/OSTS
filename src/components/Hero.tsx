@@ -164,7 +164,7 @@ const Hero = () => {
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <motion.div
                   className="text-center p-4 rounded-lg"
-                  style={{ backgroundColor: '#9ea5ae' }}
+                  style={{ backgroundColor: 'cccfd3' }}
                   whileHover={{ scale: prefersReducedMotion ? 1 : 1.05 }}
                   whileTap={{ scale: prefersReducedMotion ? 1 : 0.95 }}
                   transition={{ duration: 0.2 }}
