@@ -4,11 +4,11 @@ import { Activity, Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
 const Footer = () => {
   return (
     <footer
-      className="py-16"
+      className="py-12 sm:py-16 overflow-hidden"
       style={{ backgroundColor: "#cbcfd4", color: "#374151" }}
     >
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <img

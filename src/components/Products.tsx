@@ -85,7 +85,7 @@ const Products = () => {
   return (
     <section
       id="products"
-      className="py-20"
+      className="py-12 sm:py-16 lg:py-20 overflow-hidden"
       style={{ backgroundColor: "#c5d2dd" }}
     >
       <div className="container mx-auto px-4">
@@ -96,24 +96,24 @@ const Products = () => {
           transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
               Our Products
             </span>
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
             Cutting-edge ultrasonic sensor solutions designed for precise water
             level monitoring across various applications.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {products.map((product, index) => {
             const IconComponent = product.icon;
             return (
               <motion.div
                 key={index}
-                className="group rounded-2xl shadow-lg hover:shadow-2xl active:shadow-lg transition-all duration-300 overflow-hidden border min-h-[520px] flex flex-col w-full"
+                className="group rounded-2xl shadow-lg hover:shadow-2xl active:shadow-lg transition-all duration-300 overflow-hidden border min-h-[480px] sm:min-h-[520px] flex flex-col w-full"
                 style={{ backgroundColor: "#cbcfd4", borderColor: "#c5d2dd" }}
                 variants={mobileCardVariants}
                 initial="hidden"

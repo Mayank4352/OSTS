@@ -56,11 +56,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20"
+      className="py-12 sm:py-16 lg:py-20 overflow-hidden"
       style={{ backgroundColor: "#c5d2dd" }}
     >
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: prefersReducedMotion ? 0 : -30 }}
             whileInView={{ opacity: 1, x: 0 }}

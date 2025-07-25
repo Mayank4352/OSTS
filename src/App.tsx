@@ -12,7 +12,10 @@ import ProductDetail from "./pages/ProductDetail";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen" style={{ backgroundColor: '#cbcfd4' }}>
+      <div
+        className="min-h-screen overflow-x-hidden"
+        style={{ backgroundColor: "#cbcfd4" }}
+      >
         <Routes>
           <Route
             path="/"

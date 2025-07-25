@@ -89,7 +89,12 @@ const Features = () => {
   };
 
   return (
-    <section className="py-20" style={{ background: 'linear-gradient(to bottom right, #cbcfd4, #c5d2dd)' }}>
+    <section
+      className="py-12 sm:py-16 lg:py-20 overflow-hidden"
+      style={{
+        background: "linear-gradient(to bottom right, #cbcfd4, #c5d2dd)",
+      }}
+    >
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -98,7 +103,7 @@ const Features = () => {
           transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
             Why Choose{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
               Why Choose OSTS
@@ -110,14 +115,14 @@ const Features = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
               <motion.div
                 key={index}
-                className="p-8 rounded-2xl shadow-lg hover:shadow-xl active:shadow-lg transition-all duration-300 group"
-                style={{ backgroundColor: '#c5d2dd' }}
+                className="p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl active:shadow-lg transition-all duration-300 group"
+                style={{ backgroundColor: "#c5d2dd" }}
                 variants={mobileFeatureVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -131,7 +136,10 @@ const Features = () => {
               >
                 <motion.div
                   className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
-                  style={{ background: 'linear-gradient(to bottom right, #cbcfd4, #c5d2dd)' }}
+                  style={{
+                    background:
+                      "linear-gradient(to bottom right, #cbcfd4, #c5d2dd)",
+                  }}
                   whileHover={{ rotate: prefersReducedMotion ? 0 : 5 }}
                   transition={{ duration: 0.2 }}
                 >

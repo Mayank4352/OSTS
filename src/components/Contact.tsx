@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20"
+      className="py-12 sm:py-16 lg:py-20 overflow-hidden"
       style={{
         background: "linear-gradient(to bottom right, #cbcfd4, #c5d2dd)",
       }}
@@ -59,12 +59,12 @@ const Contact = () => {
           transition={{ duration: prefersReducedMotion ? 0.1 : 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
               Get In Touch
             </span>
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
             Ready to implement smart water level monitoring? Contact us today
             for a custom solution tailored to your needs.
           </p>
@@ -79,7 +79,7 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <motion.div
-              className="p-8 rounded-2xl shadow-lg"
+              className="p-6 sm:p-8 lg:p-10 rounded-2xl shadow-lg"
               style={{ backgroundColor: "#c5d2dd" }}
               whileHover={{ y: prefersReducedMotion ? 0 : -5 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
@@ -142,7 +142,7 @@ const Contact = () => {
             </motion.div>
 
             <motion.div
-              className="bg-gradient-to-r from-blue-600 to-teal-600 p-8 rounded-2xl text-white"
+              className="bg-gradient-to-r from-blue-600 to-teal-600 p-6 sm:p-8 lg:p-10 rounded-2xl text-white"
               whileHover={{ scale: prefersReducedMotion ? 1 : 1.02 }}
               whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
               transition={{ duration: 0.3 }}
@@ -152,7 +152,7 @@ const Contact = () => {
                 Get a quote within 24 hours for your ultrasonic sensor
                 requirements.
               </p>
-              <div className="bg-white/20 p-4 rounded-lg">
+              <div className="bg-white/20 p-4 sm:p-5 lg:p-6 rounded-lg">
                 <p className="text-sm font-semibold">Business Hours</p>
                 <p className="text-blue-100">Mon - Fri: 9:00 AM - 6:00 PM</p>
                 <p className="text-blue-100">Sat: 9:00 AM - 2:00 PM</p>
@@ -171,7 +171,7 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <motion.div
-              className="p-8 rounded-2xl shadow-lg"
+              className="p-6 sm:p-8 lg:p-10 rounded-2xl shadow-lg"
               style={{ backgroundColor: "#c5d2dd" }}
               whileHover={{ y: prefersReducedMotion ? 0 : -2 }}
               transition={{ duration: 0.3 }}
