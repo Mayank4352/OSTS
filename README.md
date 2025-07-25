@@ -2,7 +2,7 @@
 
 ## Ultrasonic Water Level Detection System
 
-A modern, responsive website for OSTS, showcasing cutting-edge ultrasonic sensor-based water tank level detection solutions.
+A modern, responsive website for OSTS, ultrasonic sensor-based water tank level detection solutions.
 
 ![OSTS Website](https://img.shields.io/badge/Status-Active-brightgreen)
 ![React](https://img.shields.io/badge/React-18.3.1-blue)
