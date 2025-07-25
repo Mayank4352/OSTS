@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Block access to sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow access to important files
+Allow: /osts-logo.png
+Allow: /sensor.jpg
+Allow: /iot-monitor.jpg
+Allow: /industrial-controller.jpg
+Allow: /analytics.jpg
+
+# Sitemap location
+Sitemap: https://osts.vercel.app/sitemap.xml
+
+# Crawl-delay for search engines
+Crawl-delay: 1

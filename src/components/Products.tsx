@@ -86,6 +86,8 @@ const Products = () => {
     <section
       id="products"
       className="py-12 sm:py-16 lg:py-20 overflow-hidden"
+      role="main"
+      aria-label="OSTS Products - Ultrasonic Sensors and IoT Solutions"
       style={{ backgroundColor: "#c5d2dd" }}
     >
       <div className="container mx-auto px-4">
@@ -163,9 +165,13 @@ const Products = () => {
                   ) : (
                     <img
                       src={product.image}
-                      alt={product.title}
+                      alt={`${product.title} - OSTS ${
+                        product.description.split(".")[0]
+                      } for water level monitoring`}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
+                      width="400"
+                      height="192"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src =

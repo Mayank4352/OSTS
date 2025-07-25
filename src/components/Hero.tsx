@@ -36,15 +36,18 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-16 min-h-screen overflow-hidden"
+      className="pt-16 min-h-screen"
+      role="banner"
+      aria-label="Hero section - Smart Water Level Detection"
       style={{
         background: `linear-gradient(to bottom right, #cbcfd4, #c5d2dd, #cbcfd4)`,
       }}
     >
       <div className="container mx-auto px-4 py-12 sm:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <motion.div
+          <motion.header
             className="space-y-6 lg:space-y-8 text-center lg:text-left"
+            role="banner"
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
@@ -61,8 +64,9 @@ const Hero = () => {
               </h1>
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
                 Advanced ultrasonic sensor technology for precise water tank
-                monitoring. Real-time level detection with unmatched accuracy
-                and reliability.
+                monitoring in India. Real-time level detection with unmatched
+                accuracy and reliability for industrial, commercial, and
+                residential applications.
               </p>
             </motion.div>
 
@@ -129,10 +133,10 @@ const Hero = () => {
                 <p className="text-sm text-gray-600">Industrial grade</p>
               </motion.div>
             </motion.div>
-          </motion.div>
+          </motion.header>
 
           <motion.div
-            className="relative overflow-hidden"
+            className="relative"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -152,8 +156,11 @@ const Hero = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
                     src="https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Ultrasonic sensor technology"
+                    alt="OSTS ultrasonic sensor technology for precise water level monitoring - Industrial grade equipment"
                     className="w-full h-full object-cover opacity-10"
+                    loading="eager"
+                    width="400"
+                    height="300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600/60 to-teal-600/60"></div>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600/60 to-teal-600/60 flex items-center justify-center">
@@ -192,10 +199,10 @@ const Hero = () => {
                 </motion.div>
               </div>
             </motion.div>
-            <div className="absolute -top-2 -right-2 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-200 to-teal-200 rounded-full opacity-20 blur-3xl"></div>
-            <div className="absolute -bottom-2 -left-2 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 bg-gradient-to-br from-teal-200 to-blue-200 rounded-full opacity-20 blur-3xl"></div>
-            <div className="absolute -top-2 -right-2 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-600 to-teal-600 rounded-full opacity-10 blur-3xl"></div>
-            <div className="absolute -bottom-2 -left-2 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 bg-gradient-to-br from-teal-600 to-blue-600 rounded-full opacity-10 blur-3xl"></div>
+            <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-200 to-teal-200 rounded-full opacity-20 blur-3xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-gradient-to-br from-teal-200 to-blue-200 rounded-full opacity-20 blur-3xl"></div>
+            <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-600 to-teal-600 rounded-full opacity-10 blur-3xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-gradient-to-br from-teal-600 to-blue-600 rounded-full opacity-10 blur-3xl"></div>
           </motion.div>
         </div>
       </div>
