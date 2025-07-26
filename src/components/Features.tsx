@@ -104,7 +104,6 @@ const Features = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
-            Why Choose{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
               Why Choose OSTS
             </span>
