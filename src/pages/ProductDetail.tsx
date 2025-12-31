@@ -1,4 +1,3 @@
-import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowLeft, Check, Star, Shield, Zap, Settings } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
