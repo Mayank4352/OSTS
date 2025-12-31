@@ -33,7 +33,7 @@ const Products = () => {
         "Real-time alerts",
         "Cloud data storage",
       ],
-      image: "/iot-monitor.jpg",
+      image: "/hydrosense.jpg",
     },
     {
       id: "industrial-controller",
